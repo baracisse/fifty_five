@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>test</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="app.js"></script>
+
+    </head>
+    <body>
+        <canvas id="myChart" width="400" height="400"></canvas>
+
+        <script>
+            var ctx = document.getElementById('myChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["John", "Smith",],
+                    datasets: [{
+                        label: "Larry",
+                        backgroundColor: 'rgb(255, 99, 132)',
+                        borderColor: 'rgb(255, 99, 132)',
+                        data: [263,
+                            656,
+                            683,
+                            null,
+                            824,
+                            361,
+                            null,
+                            802,
+                            101,
+                            867,
+                            694,
+                            843,
+                            488,
+                            622,
+                            309,
+                            486,
+                            236,
+                            774,
+                            807,
+                            577,
+                            680,
+                            949,
+                            685,
+                            122,
+                            208,
+                            null,
+                            152,
+                            453,
+                            955,
+                            782],
+                    }]
+                },
+
+                options: {}
+            });
+        </script>
+
+
+
+
+    </body>
+</html>
